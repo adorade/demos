@@ -3,7 +3,7 @@
   "title": "Demos",
   "version": "1.0.0",
   "description": "Static Site build with Gulp",
-  "main": "dist/index.html",
+  "main": "index.html",
   "repository": "https://github.com/adorade/demos",
   "author": {
     "name": "Adorade",
