@@ -32,7 +32,8 @@ const $ = require('gulp-load-plugins')({
   rename: {
     'gulp-stylelint': 'gStylelint',
     'gulp-eslint': 'gEslint',
-    'gulp-pug-linter': 'pugLinter'
+    'gulp-pug-linter': 'pugLinter',
+    'gulp-gh-pages': 'ghPages'
   }
 });
 
@@ -250,6 +251,19 @@ buildPages.description = 'Build only html files';
 
 /**
  * ----------------------------------------------------------------------------
+ * Deploy to GitHub Pages
+ * ----------------------------------------------------------------------------
+ */
+function deployPages() {
+  $.fancyLog(`${green('-> Deploy to GitHub Pages...')}`);
+  return src(`${dirs.dist}/**/*`)
+    .pipe($.ghPages(opts.deploy));
+}
+deployPages.displayName = 'deploy:pages';
+deployPages.description = 'Deploy to GitHub Pages';
+
+/**
+ * ----------------------------------------------------------------------------
  * Watch and Serve - watch files for changes and reload
  * Starts a BrowerSync instance
  * Watch files for changes
@@ -378,6 +392,8 @@ exports.build = build;
 exports.serve = serve;
 exports.watcher = watcher;
 
+// Deploy to GitHub Pages
+exports.deploy = deployPages;
 /**
  * ----------------------------------------------------------------------------
  * Define default task that can be called by just running `gulp` from cli

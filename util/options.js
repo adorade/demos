@@ -8,6 +8,10 @@
 
 const cfg = require('./config');
 
+const dates = new Date(
+  process.env.SOURCE_DATE_EPOCH ? process.env.SOURCE_DATE_EPOCH * 1000 : new Date().getTime()
+).toDateString();
+
 const styles = {
   failAfterError: false,
   reportOutputDir: cfg.dirs.logs,
@@ -57,10 +61,19 @@ const size = {
   gzip: true,
   showFiles: true
 };
+const deploy = {
+  // remoteUrl: '',
+  // branch: 'gh-pages',
+  // cacheDir: '.publish',
+  // push: true,
+  // force: false,
+  message: `Update ${dates}`
+};
 
 module.exports = {
   styles, sass, autoprefixer, csso,
   eslint, babel,
   pug, htmlmin,
-  size
+  size,
+  deploy
 };
