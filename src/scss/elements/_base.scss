@@ -1,0 +1,43 @@
+//
+// Elements
+// =============================================================================
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $bg_color_site;
+  color: $color_text_default;
+  font-family: $type_regular_font_family;
+  font-size: $base_font_size_ems;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:link,
+a:visited {
+  color: $color_link_default;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: $color_link_hover;
+  text-decoration: none;
+}
+
+@include h_tags();

@@ -1,0 +1,144 @@
+//
+// Media queries
+// =============================================================================
+
+@media only screen and (min-width: 0) {
+  .list-item:nth-child(odd) {
+    background: $color_highlight;
+  }
+}
+
+@media only screen and (max-width: 539.98px) {
+  // code here
+}
+
+@media only screen and (min-width: 540px) { // sm
+  // code here
+}
+
+@media only screen and (max-width: 767.98px) {
+  // code here
+}
+
+@media only screen and (min-width: 768px) { // md
+  @include h_tags(1.05);
+
+  .list-box > * {
+    flex: 0 1 calc(50% - .5rem);
+  }
+
+  .list-item {
+    &:nth-child(4n+1),
+    &:nth-child(4n+4) {
+      background: $color_highlight;
+    }
+    &:nth-child(4n+3) {
+      background: $color_link_default;
+    }
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  // code here
+}
+
+@media only screen and (min-width: 992px) { // lg
+  @include h_tags(1.1);
+
+  .list-box > * {
+    flex: 0 1 calc(33.33% - .5rem);
+  }
+
+  .list-item {
+    &:nth-child(odd) {
+      background: $color_highlight;
+    }
+    &:nth-child(even) {
+      background: $color_link_default;
+    }
+  }
+}
+
+@media only screen and (max-width: 1999.98px) {
+  // code here
+}
+
+@media only screen and (min-width: 1200px) { // xl
+  @include h_tags(1.15);
+
+  .list-box {
+    width: 100%;
+    max-width: $layout_site_width * $rems;
+    margin: -.25rem auto;
+  }
+
+  .list-box > * {
+    flex: 0 1 calc(25% - .5rem);
+  }
+
+  .list-item {
+    &:nth-child(8n+1),
+    &:nth-child(8n+3),
+    &:nth-child(8n+6),
+    &:nth-child(8n+8) {
+      background: $color_highlight;
+    }
+    &:nth-child(8n+2),
+    &:nth-child(8n+4),
+    &:nth-child(8n+5),
+    &:nth-child(8n+7) {
+      background: $color_link_default;
+    }
+  }
+}
+
+@media only screen and (max-width: 1919.98px) {
+  // code here
+}
+
+@media only screen and (min-width: 1920px) { // fhd
+  @include h_tags(2);
+
+  .wrapper {
+    .hello & {
+      h1 {
+        font-size: 256 * $rems;
+      }
+
+      h3,
+      h4 {
+        margin: 48 * $rems 0;
+      }
+
+      h3 {
+        font-size: 96 * $rems;
+      }
+
+      h4 {
+        font-size: 84 * $rems;
+      }
+    }
+
+    .tools & {
+      .list-item {
+        height: 280 * $rems;
+      }
+    }
+
+    .contact & {
+      .list-item {
+        height: 280 * $rems;
+      }
+    }
+  }
+
+  .list-box {
+    max-width: $layout_site_4k_width * $rems;
+
+    .list-item {
+      ul {
+        font-size: 2rem;
+      }
+    }
+  }
+}
