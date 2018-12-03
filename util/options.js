@@ -69,11 +69,14 @@ const deploy = {
   // force: false,
   message: `Update ${dates}`
 };
+const watch = {
+  delay: 2000
+};
 
 module.exports = {
   styles, sass, autoprefixer, csso,
   eslint, babel,
   pug, htmlmin,
   size,
-  deploy
+  watch, deploy
 };
