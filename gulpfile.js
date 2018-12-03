@@ -290,9 +290,7 @@ function watcher() {
 
   function watchEvent(path, event, task) {
     $.fancyLog(
-      `File ${magenta(path)}`,
-      `was ${green(event)}`,
-      `running ${red(task)}`
+      `File ${magenta(path)} was ${green(event)} running ${red(task)}`
     );
   }
 
