@@ -16,8 +16,8 @@ const fs = require('fs');
 const del = require('del');
 
 // Config and package vars
-const { dirs, paths, vars } = require('./util/config.js');
-const opts = require('./util/options.js');
+const { dirs, paths, vars } = require('./util/config');
+const opts = require('./util/options');
 
 // Template for banner to add to file headers
 const banner = require('./util/banner');
@@ -392,6 +392,7 @@ exports.watcher = watcher;
 
 // Deploy to GitHub Pages
 exports.deploy = deployPages;
+
 /**
  * ----------------------------------------------------------------------------
  * Define default task that can be called by just running `gulp` from cli
