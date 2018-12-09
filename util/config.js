@@ -18,6 +18,7 @@ const dirs = {
   src: './src',
   dist: './dist',
   tmp: './tmp',
+  deploy: './.publish',
   logs: './logs'
 };
 

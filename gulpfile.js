@@ -254,6 +254,15 @@ buildPages.description = 'Build only html files';
  * Deploy to GitHub Pages
  * ----------------------------------------------------------------------------
  */
+function cleanDeploy() {
+  $.fancyLog(
+    `${green('Clean up')} ${magenta(dirs.deploy)} folder`
+  );
+  return del(dirs.deploy);
+}
+cleanDeploy.displayName = 'clean:deploy';
+cleanDeploy.description = 'Clean up GitHub Pages';
+
 function deployPages() {
   $.fancyLog(`${green('-> Deploy to GitHub Pages...')}`);
   return src(`${dirs.dist}/**/*`)
@@ -261,6 +270,9 @@ function deployPages() {
 }
 deployPages.displayName = 'deploy:pages';
 deployPages.description = 'Deploy to GitHub Pages';
+
+const buildDeploy = series(cleanDeploy, deployPages);
+buildDeploy.description = 'Build GitHub Pages';
 
 /**
  * ----------------------------------------------------------------------------
@@ -391,7 +403,7 @@ exports.serve = serve;
 exports.watcher = watcher;
 
 // Deploy to GitHub Pages
-exports.deploy = deployPages;
+exports.deploy = buildDeploy;
 
 /**
  * ----------------------------------------------------------------------------
