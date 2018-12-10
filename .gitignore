@@ -1,6 +1,7 @@
 # Folders to ignore
 node_modules
 .extra
+.publish
 
 # To do Tasks
 .TODO
