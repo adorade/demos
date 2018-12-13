@@ -4072,10 +4072,10 @@ h6 {
   display: flex;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .pane {
@@ -4089,10 +4089,10 @@ h6 {
   display: flex;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
-  -ms-flex-pack: center;
-  justify-content: center;
   -ms-flex-align: stretch;
   align-items: stretch;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-height: calc(100vh - 2.5rem);
   padding: 5rem 0;
   margin: 0 auto;
@@ -4148,10 +4148,10 @@ h6 {
   display: flex;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin: -.25rem .25rem;
 }
 
