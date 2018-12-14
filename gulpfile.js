@@ -15,7 +15,7 @@ const http2 = require('http2');
 const fs = require('fs');
 const del = require('del');
 
-// Config and package vars
+// Config and options
 const { dirs, paths, vars } = require('./util/config');
 const opts = require('./util/options');
 
