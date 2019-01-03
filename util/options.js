@@ -4,7 +4,6 @@
  * Licensed under MIT (https://github.com/adorade/demos/blob/master/LICENSE)
  * ============================================================================
  */
-/* eslint semi: 2 */
 
 const cfg = require('./config');
 

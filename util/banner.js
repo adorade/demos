@@ -4,7 +4,6 @@
  * Licensed under MIT (https://github.com/adorade/demos/blob/master/LICENSE)
  * ============================================================================
  */
-/* eslint no-console: 0, semi: 2 */
 
 const pkg = require('../package.json');
 

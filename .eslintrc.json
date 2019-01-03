@@ -32,9 +32,20 @@
     },
     "overrides": [
         {
-            "files": ["gulpfile.js"],
+            "files": [
+                "gulpfile.js",
+                "util/*.js"
+            ],
             "rules": {
                 "semi": ["error", "always"]
+            }
+        },
+        {
+            "files": [
+                "util/banner.js"
+            ],
+            "rules": {
+                "semi": ["no-console", "off"]
             }
         }
     ]
