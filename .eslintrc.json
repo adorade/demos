@@ -45,7 +45,7 @@
                 "util/banner.js"
             ],
             "rules": {
-                "semi": ["no-console", "off"]
+                "no-console": "off"
             }
         }
     ]
