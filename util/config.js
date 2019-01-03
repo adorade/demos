@@ -1,6 +1,6 @@
 /*!
  * Demos (v1.0.0): config.js
- * Copyright (c) 2018 Adorade (https://adorade.ro)
+ * Copyright (c) 2019 Adorade (https://adorade.ro)
  * Licensed under MIT (https://github.com/adorade/demos/blob/master/LICENSE)
  * ============================================================================
  */
