@@ -1,7 +1,7 @@
 /*!
  * Demos (v1.0.0): plugins.js
  * Static Site build with Gulp
- * Copyright (c) 2018 Adorade (https://adorade.ro)
+ * Copyright (c) 2019 Adorade (https://adorade.ro)
  * License under MIT (https://github.com/adorade/demos/blob/master/LICENSE)
  * ============================================================================
  */
