@@ -8,6 +8,6 @@
 
 # DEMOS
 
-> Static Site build with Gulp
+> ✔ Static Site build with Gulp
 
 Work in progress...
