@@ -14,11 +14,11 @@ const vars = {
 
 const dirs = {
   root: './',
-  src: './src',
-  dist: './dist',
-  tmp: './tmp',
-  deploy: './.publish',
-  logs: './logs'
+  src: 'src',
+  dist: 'dist',
+  tmp: 'tmp',
+  deploy: '.publish',
+  logs: 'logs'
 };
 
 const paths = {
@@ -66,6 +66,9 @@ const paths = {
       dir: `${dirs.dist}/`,
       files: `${dirs.dist}/*.html`
     }
+  },
+  logs: {
+    gulp: `${dirs.logs}/gulp/`
   }
 };
 

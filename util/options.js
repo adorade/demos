@@ -5,7 +5,7 @@
  * ============================================================================
  */
 
-const { dirs } = require('./config');
+const { paths } = require('./config');
 
 const dates = new Date(
   process.env.SOURCE_DATE_EPOCH ? process.env.SOURCE_DATE_EPOCH * 1000 : new Date().getTime()
@@ -13,7 +13,7 @@ const dates = new Date(
 
 const styles = {
   failAfterError: false,
-  reportOutputDir: `${dirs.logs}/gulp`,
+  reportOutputDir: paths.logs.gulp,
   reporters: [
     { formatter: 'string', console: true, save: 'styles.txt' }
   ],

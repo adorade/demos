@@ -149,7 +149,7 @@ pluginsJs.description = 'Build JS plugins';
 function lintJs() {
   $.fancyLog(`${green('-> Linting ES files...')}`);
 
-  const outputDir = `${dirs.logs}/gulp`;
+  const outputDir = paths.logs.gulp;
   fs.mkdirSync(`${outputDir}`, { recursive: true });
   const output = fs.createWriteStream( `${outputDir}/scripts.txt` );
 
