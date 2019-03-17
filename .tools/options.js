@@ -73,9 +73,5 @@ const watch = {
 };
 
 module.exports = {
-  styles, sass, autoprefixer, csso,
-  eslint, babel,
-  pug, htmlmin,
-  size,
-  watch, deploy
+  styles, sass, autoprefixer, csso, eslint, babel, pug, htmlmin, size, watch, deploy
 };
