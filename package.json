@@ -51,7 +51,7 @@
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-size": "^3.0.0",
-    "gulp-stylelint": "^8.0.0",
+    "gulp-stylelint": "^9.0.0",
     "gulp-uglify": "^3.0.2",
     "stylelint": "^9.10.1",
     "stylelint-config-standard": "^18.2.0",
