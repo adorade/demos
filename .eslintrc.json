@@ -34,7 +34,7 @@
         {
             "files": [
                 "gulpfile.js",
-                "util/*.js"
+                "tools/*.js"
             ],
             "rules": {
                 "semi": ["error", "always"]
@@ -42,7 +42,7 @@
         },
         {
             "files": [
-                "util/banner.js"
+                "tools/banner.js"
             ],
             "rules": {
                 "no-console": "off"

@@ -1,7 +1,7 @@
 /*!
- * Demos (v1.0.0): banner.js
+ * Demos (v1.0.0): tools/banner.js
  * Copyright (c) 2019 Adorade (https://adorade.ro)
- * Licensed under MIT (https://github.com/adorade/demos/blob/master/LICENSE)
+ * Licensed under MIT
  * ============================================================================
  */
 

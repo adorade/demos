@@ -15,11 +15,11 @@ const fs = require('fs');
 const del = require('del');
 
 // Config and options
-const { dirs, paths, vars } = require('./.tools/config');
-const opts = require('./.tools/options');
+const { dirs, paths, vars } = require('./tools/config');
+const opts = require('./tools/options');
 
 // Template for banner to add to file headers
-const banner = require('./.tools/banner');
+const banner = require('./tools/banner');
 
 // Load all plugins in "devDependencies" into the variable $
 const $ = require('gulp-load-plugins')({
