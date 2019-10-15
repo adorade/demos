@@ -1,4 +1,5 @@
-name: CI
+# GitHub Actions allows you to build, test, and deploy applications in your language of choice
+name: Node CI
 
 on:
   push:
