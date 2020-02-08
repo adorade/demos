@@ -1,14 +1,14 @@
 /*!
  * Demos (v1.0.0): main.js
  * Static Site build with Gulp
- * Copyright (c) 2019 Adorade (https://adorade.ro)
+ * Copyright (c) 2020 Adorade (https://adorade.ro)
  * License under MIT (https://github.com/adorade/demos/blob/master/LICENSE)
  * ============================================================================
  */
 /*!
  * Demos (v1.0.0): plugins.js
  * Static Site build with Gulp
- * Copyright (c) 2019 Adorade (https://adorade.ro)
+ * Copyright (c) 2020 Adorade (https://adorade.ro)
  * License under MIT (https://github.com/adorade/demos/blob/master/LICENSE)
  * ============================================================================
  */
@@ -529,7 +529,7 @@
 /*!
  * Demos (v1.0.0): scripts.js
  * Static Site build with Gulp
- * Copyright (c) 2019 Adorade (https://adorade.ro)
+ * Copyright (c) 2020 Adorade (https://adorade.ro)
  * License under MIT (https://github.com/adorade/demos/blob/master/LICENSE)
  * ============================================================================
  */
